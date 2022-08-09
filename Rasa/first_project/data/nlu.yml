@@ -1,0 +1,92 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: get_score
+  examples: |
+    - Can I get my score?
+    - What is my score?
+    - How did I do on my exam?
+    - What was my score on my exam?
+    - What was my score?
+    - What is my score in the course with courseId [123](course_id)
+    - What is my score? studentId: [810198331](student_id)
+    - Could you give me my score?
+
+- intent: give_student_id
+  examples: |
+    - My studentId is [810198331](student_id)
+    - [810198331](student_id)
+
+- intent: give_course_id
+  examples: |
+    - The courseId is [123](course_id)
+    - [123](course_id)
+
+- regex: student_id
+  examples: |
+    - \d{9} 
+
+- regex: course_id
+  examples: |
+    - \d{3}
+
+- synonym: courseId
+  examples: |
+    - course id
+
+- synonym: studentId
+  examples: |
+    - student id

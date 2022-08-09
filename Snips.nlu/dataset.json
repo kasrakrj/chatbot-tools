@@ -1,0 +1,183 @@
+{
+  "entities": {
+    "snips/number": {}
+  },
+  "intents": {
+    "getScore": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "score?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can I get my score?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What is my score?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can you give me my score?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Could you get my score?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What is the score for studentId "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "studentId",
+              "text": "810198331"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What is the score for studentId "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "studentId",
+              "text": "810198331"
+            },
+            {
+              "text": " courseId "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "courseId",
+              "text": "123"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "studentId "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "studentId",
+              "text": "810198331"
+            },
+            {
+              "text": " courseId "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "courseId",
+              "text": "123"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Could you give me the score for studentId "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "studentId",
+              "text": "810198331"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How did I do on courseId "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "courseId",
+              "text": "234"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can I get my score on courseId "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "courseId",
+              "text": "213"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What is the score for student id "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "studentId",
+              "text": "810198331"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How did I do on course id "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "courseId",
+              "text": "234"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

@@ -1,0 +1,75 @@
+version: "3.1"
+
+actions:
+  - action_get_score
+  - utter_greet
+  - utter_ask_student_id
+  - utter_ask_course_id
+  - utter_iamabot
+
+entities:
+  - student_id
+  - course_id
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - get_score
+  - give_student_id
+  - give_course_id
+  
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"  
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_ask_student_id:
+  - text: What is your student ID?
+
+  utter_ask_course_id:
+  - text: What is your course ID?
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+slots:
+  student_id:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: student_id
+  course_id:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: course_id
+
+forms:
+  score_form:
+    required_slots:
+        - student_id
+        - course_id
+
+

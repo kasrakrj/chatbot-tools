@@ -1,0 +1,23 @@
+---
+type: intent
+name: getScore
+slots:
+  - name: studentId
+    entity: snips/number
+  - name: courseId
+    entity: snips/number
+utterances:
+  - score?
+  - Can I get my score?
+  - What is my score?
+  - Can you give me my score?
+  - Could you get my score?
+  - What is the score for studentId [studentId](810198331)?
+  - What is the score for studentId [studentId](810198331) courseId [courseId](123)?
+  - studentId [studentId](810198331) courseId [courseId](123)? 
+  - Could you give me the score for studentId [studentId](810198331)?
+  - How did I do on courseId [courseId](234)?
+  - Can I get my score on courseId [courseId](213)?
+  - What is the score for student id [studentId](810198331)?
+  - How did I do on course id [courseId](234)?
+
